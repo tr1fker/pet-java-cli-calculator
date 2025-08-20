@@ -11,4 +11,8 @@ public class InputHandler {
         return scanner.nextInt();
     }
 
+    public char inputOperator(){
+        return scanner.next().charAt(0);
+    }
+
 }
