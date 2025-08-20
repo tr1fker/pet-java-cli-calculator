@@ -6,13 +6,13 @@ public class Calculator {
         BasicOperationsHandler basicOperationsHandler = new BasicOperationsHandler();
 
         System.out.print("Введите 1-ое число:");
-        int a = inputHandler.inputInteger();
+        double a = inputHandler.inputDouble();
         System.out.print("Ведите 2-ое число:");
-        int b = inputHandler.inputInteger();
+        double b = inputHandler.inputDouble();
         System.out.print("Введите арифетический оператор('+','-','*','/'):");
         char operator = inputHandler.inputOperator();
 
-        int result = 0;
+        double result = 0;
         switch (operator) {
             case '+':
                 result = basicOperationsHandler.add(a, b);
