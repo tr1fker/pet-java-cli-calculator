@@ -13,6 +13,10 @@ public class BasicOperationsHandler {
     }
 
     public int divide(int a, int b){
+        if (b == 0){
+            System.out.println("Ошибка: Деление на ноль! Результат будет равен 1-ому числу.");
+            return a;
+        }
         return a / b;
     }
 
